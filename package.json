@@ -1,6 +1,6 @@
 {
   "name": "portfolio-3164-estudio",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -18,8 +18,10 @@
     "react-image-lightbox": "^5.1.4"
   },
   "devDependencies": {
-    "@types/node": "^18.17.0",
-    "@types/react": "^18.2.0",
-    "typescript": "^5.2.2"
+    "@types/node": "20.4.2",
+    "@types/react": "18.2.15",
+    "eslint": "8.56.0",
+    "eslint-config-next": "13.2.4",
+    "typescript": "5.2.2"
   }
 }
