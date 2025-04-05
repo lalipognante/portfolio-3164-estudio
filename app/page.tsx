@@ -2,18 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-
-const proyectos = [
-  {
-    titulo: "Clément Vergely, Versailles",
-    imagenes: ["/proyectos/proyecto1-1.jpg", "/proyectos/proyecto1-2.jpg"],
-  },
-  {
-    titulo: "Jean Nouvel, Lyon",
-    imagenes: ["/proyectos/proyecto2-1.jpg"],
-  },
-  // Agregá más proyectos acá
-];
+import proyectos from "@/data/proyectos";
 
 export default function HomePage() {
   return (
@@ -44,15 +33,9 @@ function Proyecto({ titulo, imagenes }: { titulo: string; imagenes: string[] }) 
         <div>{titulo}</div>
         {imagenes.length > 1 && (
           <div className="flex justify-center gap-2 mt-1">
-            <button onClick={prev} className="hover:underline">
-              {"<"}
-            </button>
-            <span>
-              {index + 1} / {imagenes.length}
-            </span>
-            <button onClick={next} className="hover:underline">
-              {">"}
-            </button>
+            <button onClick={prev} className="hover:underline">{"<"}</button>
+            <span>{index + 1} / {imagenes.length}</span>
+            <button onClick={next} className="hover:underline">{">"}</button>
           </div>
         )}
       </div>
