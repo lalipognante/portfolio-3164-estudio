@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { proyectos } from "@/data/proyectos";
+import { proyectos } from "../data/proyectos";
 
 export default function HomePage() {
   return (
