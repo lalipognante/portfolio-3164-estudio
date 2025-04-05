@@ -18,10 +18,10 @@ export default function RootLayout({
         <header className="mb-10">
           <div className="flex justify-center mb-4">
             <Image
-              src="/logo.jpeg"
+              src="/logoGris.png"
               alt="31 64 Estudio"
-              width={200}
-              height={100}
+              width={150}
+              height={50}
             />
           </div>
           
