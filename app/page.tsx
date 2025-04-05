@@ -37,20 +37,21 @@ function Proyecto({
     <div className="break-inside-avoid">
       <div className="relative">
         <Image
-          src={imagenes[index]} // Imagen visible
+          src={imagenes[index]}
           alt={titulo}
           width={1000}
           height={600}
           sizes="(max-width: 768px) 100vw, 1000px"
           className="w-full h-auto max-h-[80vh] object-contain transition-opacity duration-300 ease-in-out"
-          priority={index === 0}  // La primera imagen se carga primero
-          loading="lazy"  // Lazy loading para las demás
+          priority={index === 0}
+          loading="lazy"
         />
       </div>
 
       <div className="mt-2 text-sm text-center">
         <div>{titulo}</div>
         <p className="text-xs font-mono">{descripcion}</p>
+        
         {imagenes.length > 1 && (
           <div className="flex justify-center gap-2 mt-1">
             <button onClick={prev} className="hover:underline">{"<"}</button>
@@ -62,4 +63,3 @@ function Proyecto({
     </div>
   );
 }
-
