@@ -38,9 +38,11 @@ function Proyecto({
       <Image
         src={imagenes[index]}
         alt={titulo}
-        width={1200}
-        height={800}
-        className="w-full h-auto object-cover"
+        width={1000}
+        height={600}
+        sizes="(max-width: 768px) 100vw, 1000px"
+        className="w-full h-auto max-h-[80vh] object-contain transition-opacity duration-300 ease-in-out"
+        priority={index === 0}
       />
       <div className="mt-2 text-sm text-center">
         <div>{titulo}</div>
