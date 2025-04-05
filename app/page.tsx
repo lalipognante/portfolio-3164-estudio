@@ -1,25 +1,58 @@
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
 import { proyectos } from "../data/proyectos";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="flex flex-col gap-20 items-center py-10">
+    <main className="space-y-16">
       {proyectos.map((proyecto, i) => (
-        <section key={i} className="w-full max-w-4xl">
-          <h2 className="text-center font-mono text-base mb-4">{proyecto.titulo}</h2>
-          <div className="flex flex-col gap-6">
-            {proyecto.imagenes.map((src, j) => (
-              <div key={j}>
-                <img
-                  src={src}
-                  alt={`Imagen ${j + 1} de ${proyecto.titulo}`}
-                  className="w-full object-contain mb-2"
-                />
-                <p className="text-center text-sm font-mono">{proyecto.descripcion}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <Proyecto
+          key={i}
+          titulo={proyecto.titulo}
+          imagenes={proyecto.imagenes}
+          descripcion={proyecto.descripcion}
+        />
       ))}
     </main>
+  );
+}
+
+function Proyecto({
+  titulo,
+  imagenes,
+  descripcion,
+}: {
+  titulo: string;
+  imagenes: string[];
+  descripcion: string;
+}) {
+  const [index, setIndex] = useState(0);
+
+  const prev = () => setIndex((i) => (i === 0 ? imagenes.length - 1 : i - 1));
+  const next = () => setIndex((i) => (i === imagenes.length - 1 ? 0 : i + 1));
+
+  return (
+    <div className="break-inside-avoid">
+      <Image
+        src={imagenes[index]}
+        alt={titulo}
+        width={1200}
+        height={800}
+        className="w-full h-auto object-cover"
+      />
+      <div className="mt-2 text-sm text-center">
+        <div>{titulo}</div>
+        <p className="text-xs font-mono">{descripcion}</p>
+        {imagenes.length > 1 && (
+          <div className="flex justify-center gap-2 mt-1">
+            <button onClick={prev} className="hover:underline">{"<"}</button>
+            <span>{index + 1} / {imagenes.length}</span>
+            <button onClick={next} className="hover:underline">{">"}</button>
+          </div>
+        )}
+      </div>
+    </div>
   );
 }
