@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="es">
       <body className="font-mono px-6 py-10">
         <header className="mb-10">
-          <div className="flex justify-center mb-4">
+          <div className="flex justify-start mb-4">
             <Image
               src="/logoGris.png"
               alt="31 64 Estudio"
