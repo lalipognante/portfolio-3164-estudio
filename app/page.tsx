@@ -35,7 +35,7 @@ function Proyecto({
 
   return (
     <div className="break-inside-avoid">
-      <div className="relative">
+      <div className="relative flex justify-start">
         <Image
           src={imagenes[index]}
           alt={titulo}
@@ -51,7 +51,6 @@ function Proyecto({
       <div className="mt-2 text-sm text-center">
         <div>{titulo}</div>
         <p className="text-xs font-mono">{descripcion}</p>
-        
         {imagenes.length > 1 && (
           <div className="flex justify-center gap-2 mt-1">
             <button onClick={prev} className="hover:underline">{"<"}</button>
