@@ -35,24 +35,24 @@ function Proyecto({
 
   return (
     <div className="break-inside-avoid">
-      <div className="relative w-full">
+      <div className="relative w-full text-left">
         <Image
           src={imagenes[index]}
           alt={titulo}
           width={1000}
           height={600}
           sizes="(max-width: 768px) 100vw, 1000px"
-          className="w-full h-auto max-h-[80vh] object-contain transition-opacity duration-300 ease-in-out ml-0"
+          className="w-full h-auto max-h-[80vh] object-contain transition-opacity duration-300 ease-in-out float-left mr-4"
           priority={index === 0}
           loading="lazy"
         />
       </div>
 
-      <div className="mt-2 text-sm text-center">
+      <div className="mt-2 text-sm text-left">
         <div>{titulo}</div>
         <p className="text-xs font-mono">{descripcion}</p>
         {imagenes.length > 1 && (
-          <div className="flex justify-center gap-2 mt-1">
+          <div className="flex justify-start gap-2 mt-1">
             <button onClick={prev} className="hover:underline">{"<"}</button>
             <span>{index + 1} / {imagenes.length}</span>
             <button onClick={next} className="hover:underline">{">"}</button>
