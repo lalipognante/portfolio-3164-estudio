@@ -1,4 +1,23 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
+import { proyectos } from "../data/proyectos";
+
+export default function HomePage() {
+  return (
+    <main className="space-y-16">
+      {proyectos.map((proyecto, i) => (
+        <Proyecto
+          key={i}
+          titulo={proyecto.titulo}
+          imagenes={proyecto.imagenes}
+          descripcion={proyecto.descripcion}
+        />
+      ))}
+    </main>
+  );
+}
 
 function Proyecto({
   titulo,
