@@ -1,6 +1,6 @@
-// app/layout.tsx
 import './globals.css';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Portfolio 31 64 Estudio',
@@ -16,9 +16,15 @@ export default function RootLayout({
     <html lang="es">
       <body className="font-mono px-6 py-10">
         <header className="mb-10">
-          <h1 className="text-xl md:text-2xl font-mono font-medium tracking-wide mb-4">
-            31 64 ESTUDIO
-          </h1>
+          <div className="flex justify-center mb-4">
+            <Image
+              src="/logo.jpeg"
+              alt="31 64 Estudio"
+              width={200}
+              height={100}
+            />
+          </div>
+          
           <nav className="flex flex-wrap gap-6 text-sm font-mono">
             <Link href="/" className="cursor-pointer hover:underline transition">
               Proyectos
