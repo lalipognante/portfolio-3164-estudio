@@ -35,14 +35,14 @@ function Proyecto({
 
   return (
     <div className="break-inside-avoid">
-      <div className="relative flex justify-start">
+      <div className="relative w-full">
         <Image
           src={imagenes[index]}
           alt={titulo}
           width={1000}
           height={600}
           sizes="(max-width: 768px) 100vw, 1000px"
-          className="w-full h-auto max-h-[80vh] object-contain transition-opacity duration-300 ease-in-out"
+          className="w-full h-auto max-h-[80vh] object-contain transition-opacity duration-300 ease-in-out ml-0"
           priority={index === 0}
           loading="lazy"
         />
