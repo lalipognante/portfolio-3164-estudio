@@ -1,4 +1,3 @@
-// data/proyectos.ts
 export const proyectos = [
   {
     titulo: "Proyecto 1",
