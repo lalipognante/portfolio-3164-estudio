@@ -1,7 +1,7 @@
 
 export default function ContactPage() {
   return (
-    <section className="max-w-2xl text-sm">
+    <main className="max-w-2xl text-sm">
       <h2 className="text-lg font-semibold mb-4">Contacto</h2>
       <p>Av. Ciudad de Valparaíso 4236 Oficina 5, Cba, Argentina.</p>
       <p>+54 9 3512389500</p>
@@ -15,6 +15,6 @@ export default function ContactPage() {
           Instagram
         </a>
       </p>
-    </section>
+    </main>
   );
 }
