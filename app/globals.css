@@ -4,6 +4,7 @@
 
 header , main {
     margin-left: 8vw;
+    margin-rigth: 8vw;
 }
 
 .proyecto-container {
@@ -46,9 +47,9 @@ header , main {
       margin-top: 10px;
     }
       
-    header , main {
+    /*header , main {
       margin-left: 0;
-    }
+    }*/
   }
 
   
