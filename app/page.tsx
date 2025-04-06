@@ -34,21 +34,21 @@ function Proyecto({
   const next = () => setIndex((i) => (i === imagenes.length - 1 ? 0 : i + 1));
 
   return (
-    <div className="break-inside-avoid flex flex-col md:flex-col">
-      <div className="relative w-full text-left md:w-1/2">
+    <div className="proyecto-container">
+      <div className="image-container w-full md:w-1/2">
         <Image
           src={imagenes[index]}
           alt={titulo}
           width={1000}
           height={600}
           sizes="(max-width: 768px) 100vw, 1000px"
-          className="w-full h-auto max-h-[80vh] object-contain transition-opacity duration-300 ease-in-out"
+          className="project-image w-full h-auto max-h-[80vh] object-contain"
           priority={index === 0}
           loading="lazy"
         />
       </div>
 
-      <div className="mt-2 text-sm text-left md:w-1/2">
+      <div className="description-container mt-2 text-sm w-full md:w-1/2">
         <div>{titulo}</div>
         <p className="text-xs font-mono">{descripcion}</p>
         {imagenes.length > 1 && (
