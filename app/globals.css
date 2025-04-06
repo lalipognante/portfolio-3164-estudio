@@ -45,6 +45,10 @@ header , main {
       width: 100%;
       margin-top: 10px;
     }
+      
+    header , main {
+      margin-left: 0;
+    }
   }
 
   
