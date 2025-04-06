@@ -34,8 +34,8 @@ function Proyecto({
   const next = () => setIndex((i) => (i === imagenes.length - 1 ? 0 : i + 1));
 
   return (
-    <div className="break-inside-avoid">
-      <div className="relative w-full text-left">
+    <div className="break-inside-avoid flex flex-col md:flex-col">
+      <div className="relative w-full text-left md:w-1/2">
         <Image
           src={imagenes[index]}
           alt={titulo}
@@ -48,20 +48,14 @@ function Proyecto({
         />
       </div>
 
-      <div className="mt-2 text-sm text-left">
+      <div className="mt-2 text-sm text-left md:w-1/2">
         <div>{titulo}</div>
         <p className="text-xs font-mono">{descripcion}</p>
         {imagenes.length > 1 && (
           <div className="flex justify-start gap-2 mt-1">
-            <button onClick={prev} className="hover:underline">
-              {"<"}
-            </button>
-            <span>
-              {index + 1} / {imagenes.length}
-            </span>
-            <button onClick={next} className="hover:underline">
-              {">"}
-            </button>
+            <button onClick={prev} className="hover:underline">{"<"}</button>
+            <span>{index + 1} / {imagenes.length}</span>
+            <button onClick={next} className="hover:underline">{">"}</button>
           </div>
         )}
       </div>
