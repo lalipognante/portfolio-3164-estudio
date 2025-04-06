@@ -44,7 +44,7 @@ function Proyecto({
           sizes="(max-width: 768px) 100vw, 1000px"
           className="project-image w-full h-auto max-h-[80vh] object-contain"
           priority={index === 0}
-          //loading="lazy"
+          loading="lazy"
         />
       </div>
 
