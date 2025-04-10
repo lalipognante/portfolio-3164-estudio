@@ -34,7 +34,7 @@ function Proyecto({
   const next = () => setIndex((i) => (i === imagenes.length - 1 ? 0 : i + 1));
 
   return (
-    <div className="proyecto-container">
+    <div className="proyecto-container flex flex-col md:flex-row space-y-4 md:space-y-0">
       <div className="image-container w-full md:w-1/2">
         <Image
           src={imagenes[index]}
@@ -48,8 +48,8 @@ function Proyecto({
         />
       </div>
 
-      <div className="description-container mt-2 text-sm w-full md:w-1/2">
-        <p className="text-xs font-mono">{descripcion}</p>
+      <div className="description-container mt-2 text-sm w-full md:w-1/2 flex flex-col justify-start">
+        <p className="text-xs font-mono text-left">{descripcion}</p>
         {imagenes.length > 1 && (
           <div className="flex justify-start gap-2 mt-1">
             <button onClick={prev} className="hover:underline">{"<"}</button>
