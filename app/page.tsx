@@ -48,9 +48,9 @@ function Proyecto({
         />
       </div>
 
-      <div className="description-container mt-2 text-sm w-full md:w-1/2 flex flex-row justify-between items-center">
+      <div className="description-container mt-2 text-sm w-full md:w-1/2 flex flex-row justify-start items-center">
         <p className="text-xs font-mono text-left w-3/4">{descripcion}</p>
-        <div className="flex justify-center gap-2 mt-1 w-1/4">
+        <div className="flex justify-start gap-2 mt-1 w-1/4">
           {imagenes.length > 1 && (
             <>
               <button onClick={prev} className="hover:underline">{"<"}</button>
