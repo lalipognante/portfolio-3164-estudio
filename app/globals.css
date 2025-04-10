@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Estilos para pantallas grandes (mayores a 768px) */
 header, main {
     margin-left: 8vw;
