@@ -1,7 +1,7 @@
 export const proyectos = [
   {
     titulo: "Proyecto 1",
-    descripcion: "Casa en las sierras",
+    descripcion: "Refugio de Montaña, Potrero de Garay 2020",
     imagenes: [
       "/proyectos/image1-project1.webp",
       "/proyectos/image2-project1.webp",
