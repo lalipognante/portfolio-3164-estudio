@@ -2,7 +2,6 @@
 export default function AboutPage() {
   return (
     <main className="max-w-2xl text-sm leading-relaxed">
-      <h2 className="text-lg font-semibold mb-4">Sobre el estudio</h2>
       <p>
         31 64 estudio es oficina de arquitectura fundada en 2024 en Córdoba Capital, Argentina,
         comprometida con el diseño de espacios habitables y su relación con el entorno. Su nombre responde a las
