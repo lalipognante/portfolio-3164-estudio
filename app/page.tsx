@@ -48,10 +48,10 @@ function Proyecto({
         />
       </div>
 
-      <div className="description-container mt-2 text-sm w-full md:w-1/2 flex items-center space-x-4">
+      <div className="description-container pt-2 mt-2 text-sm w-full md:w-1/2 flex items-center space-x-4">
         <p className="text-xs font-mono text-left">{descripcion}</p>
         {imagenes.length > 1 && (
-          <div className="flex justify-center gap-2">
+          <div className="text-xs flex justify-center gap-2">
             <button onClick={prev} className="hover:underline">{"<"}</button>
             <span>{index + 1} / {imagenes.length}</span>
             <button onClick={next} className="hover:underline">{">"}</button>
