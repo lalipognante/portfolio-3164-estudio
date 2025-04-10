@@ -1,12 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-header , main {
+/* Estilos para pantallas grandes (mayores a 768px) */
+header, main {
     margin-left: 8vw;
-    margin-rigth: 8vw;
+    margin-right: 8vw;
 }
 
+/* Proyecto */
 .proyecto-container {
     display: flex;
     flex-direction: column;
@@ -14,44 +12,34 @@ header , main {
     width: 100%;
     margin-bottom: 1rem;
 }
-  
+
 .image-container {
     width: 100%;
 }
-  
+
 .project-image {
     height: auto;
     width: auto;
     object-fit: contain;
     transition: opacity 0.3s ease-in-out;
 }
-  
+
 .description-container {
     margin-top: 0.5rem;
     width: 100%;
 }
 
-/* estilos para mobile */
-@media (min-width: 768px) {
-.proyecto-container {
-  flex-direction: column;
-  align-items: flex-start;
-}
+/* Estilos para pantallas pequeñas (menores a 768px) */
+@media (max-width: 768px) {
+    header, main {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-.image-container {
-  width: 100%;
+    /*
+    .description-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+    */
 }
-
-.description-container {
-  width: 100%;
-  margin-top: 10px;
-}
-header , main {
-    margin-left: 0;
-    margin-rigth: 0;
-}
-    
-}
-
-  
-  
