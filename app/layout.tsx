@@ -30,13 +30,13 @@ export default function RootLayout({
               Proyectos
             </Link>
             <Link href="/about" className="cursor-pointer hover:underline transition">
-              About
+              Estudio
             </Link>
             <Link href="/team" className="cursor-pointer hover:underline transition">
-              Team
+              Equipo
             </Link>
             <Link href="/contact" className="cursor-pointer hover:underline transition">
-              Contact
+              Contacto
             </Link>
           </nav>
         </header>
