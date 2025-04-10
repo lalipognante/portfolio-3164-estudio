@@ -31,7 +31,7 @@ header , main {
     /*text-align: center;*/
     width: 100%;
   }
-  
+}
   @media (min-width: 768px) {
     .proyecto-container {
       flex-direction: column;
@@ -46,10 +46,10 @@ header , main {
       width: 100%;
       margin-top: 10px;
     }
-      
-    /*header , main {
-      margin-left: 0;
-    }*/
+    header , main {
+        margin-left: 0;
+        margin-rigth: 0;
+    }
   }
 
   
