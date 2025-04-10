@@ -32,5 +32,14 @@ export const proyectos = [
       "/proyectos/image4-project4.webp",
       "/proyectos/image5-project4.webp"
     ]
+  },
+  {
+    titulo: "Proyecto 5",
+    descripcion: "Casa suburbana v2",
+    imagenes: [
+      "/proyectos/image1-project4.webp",
+      "/proyectos/image4-project4.webp",
+      "/proyectos/image5-project4.webp"
+    ]
   }
 ];
