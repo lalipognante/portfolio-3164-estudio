@@ -49,7 +49,6 @@ function Proyecto({
       </div>
 
       <div className="description-container mt-2 text-sm w-full md:w-1/2">
-        <div>{titulo}</div>
         <p className="text-xs font-mono">{descripcion}</p>
         {imagenes.length > 1 && (
           <div className="flex justify-start gap-2 mt-1">
