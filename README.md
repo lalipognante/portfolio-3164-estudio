@@ -102,6 +102,72 @@ Cada vista (Estudio, Equipo, Contacto) tiene una descripción que puedes editar.
 
 ---
 
+## 5. Cómo Editar el Logo y su Tamaño
+
+El logo se encuentra en el archivo **`app/layout.tsx`**. Para editar el logo, sigue estos pasos:
+
+1. Abre el archivo **`app/layout.tsx`**.
+2. Busca el código correspondiente al logo. Deberías encontrar algo como esto:
+
+```tsx
+<header className="mb-10">
+  <h1 className="text-xl md:text-2xl font-mono font-medium tracking-wide mb-4">
+    31 64 ESTUDIO
+  </h1>
+</header>
+```
+
+Este código es donde se encuentra el nombre del estudio y el logo (puedes cambiar el texto si es necesario).
+
+### Para cambiar la imagen del logo:
+
+1. Coloca tu imagen en la carpeta **`public`** o en una subcarpeta dentro de **`public`**, por ejemplo, en **`public/images`**.
+2. Luego, reemplaza el texto por una etiqueta **`<Image>`** como esta:
+
+```tsx
+import Image from "next/image";
+import logo from '../public/images/logo.png'; // Cambia la ruta según sea necesario
+
+<header className="mb-10">
+  <Image src={logo} alt="31 64 Estudio" width={200} height={100} />
+</header>
+```
+
+### Para cambiar el tamaño del logo:
+
+El tamaño se ajusta con los valores de **`width`** y **`height`** en la etiqueta **`<Image>`**. Puedes cambiar estos valores según necesites, por ejemplo:
+
+```tsx
+<Image src={logo} alt="31 64 Estudio" width={150} height={80} />
+```
+
+### Para cambiar la posición del logo (izquierda, centro, derecha):
+
+1. En el archivo **`app/layout.tsx`**, puedes cambiar el estilo del contenedor del logo, como sigue:
+
+#### Para alinear el logo a la izquierda:
+```tsx
+<header className="mb-10 text-left">
+  <Image src={logo} alt="31 64 Estudio" width={200} height={100} />
+</header>
+```
+
+#### Para centrar el logo:
+```tsx
+<header className="mb-10 text-center">
+  <Image src={logo} alt="31 64 Estudio" width={200} height={100} />
+</header>
+```
+
+#### Para alinear el logo a la derecha:
+```tsx
+<header className="mb-10 text-right">
+  <Image src={logo} alt="31 64 Estudio" width={200} height={100} />
+</header>
+```
+
+---
+
 ## Licencia
 
 Este proyecto está bajo la licencia **MIT**. Para más detalles, consulta el archivo `LICENSE`.
