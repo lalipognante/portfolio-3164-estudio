@@ -34,3 +34,10 @@ export const proyectos = [
     ]
   }
 ];
+{
+  titulo: "Edificio Bustamante, 2025",
+  imagenes: [
+    "proyectos/Bustamante1.webp",
+    "proyectos/Bustamante2.webp",
+  ],
+},
