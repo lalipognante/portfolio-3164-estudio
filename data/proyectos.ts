@@ -34,8 +34,8 @@ export const proyectos = [
     ]
   },
   {
-    titulo: "Edificio Bustamante, 2025",
-    descripcion: "Edificio residencial moderno en zona urbana",
+    titulo: "Proyecto 5",
+    descripcion: "Edificio Bustamante, 2025",
     imagenes: [
       "/proyectos/Bustamante1.webp",
       "/proyectos/Bustamante2.webp",
