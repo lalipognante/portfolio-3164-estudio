@@ -18,13 +18,6 @@ export const proyectos = [
     ]
   },
  {
-    titulo: "Proyecto 13",
-    descripcion: "Mobiliario Rack TV, 2025",
-    imagenes: [
-      "/proyectos/Racktv01.webp"
-    ]
-  },
-  {
     titulo: "Proyecto 1",
     descripcion: "Refugio de Montaña, Potrero de Garay, 2020",
     imagenes: [
@@ -52,12 +45,14 @@ export const proyectos = [
       "/proyectos/Andalucia5.webp",
     ]
   },
-  {
-    titulo: "Proyecto 6",
-    descripcion: "Casa entre los árboles",
+ {
+    titulo: "Proyecto 7",
+    descripcion: "Casa La Cumbrecita, 2023",
     imagenes: [
-      "/proyectos/image1-project2.webp",
-      "/proyectos/image2-project2.webp"
+      "/proyectos/image2-project3.webp",
+      "/proyectos/Cumbrecita01.webp",
+      "/proyectos/Cumbrecita02.webp",
+      "/proyectos/Cumbrecita03.webp" 
     ]
   },
   {
@@ -71,12 +66,11 @@ export const proyectos = [
       "/proyectos/Estrada05.webp"
     ]
   },
-  {
-    titulo: "Proyecto 7",
-    descripcion: "Casa La Cumbrecita, 2023",
+   {
+    titulo: "Proyecto 13",
+    descripcion: "Mobiliario Rack TV, 2025",
     imagenes: [
-      "/proyectos/image1-project3.webp",
-      "/proyectos/image2-project3.webp"
+      "/proyectos/Racktv01.webp"
     ]
-  }
+  },
 ];
