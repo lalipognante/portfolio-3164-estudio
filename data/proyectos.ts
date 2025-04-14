@@ -38,7 +38,7 @@ export const proyectos = [
     titulo: "Proyecto 5",
     descripcion: "Casa Nueva Andalucia, 2024",
     imagenes: [
-      "/proyectos/Andalucio1.webp",
+      "/proyectos/Andalucia1.webp",
       "/proyectos/Andalucia2.webp",
       "/proyectos/Andalucia3.webp",
       "/proyectos/Andalucia4.webp",
