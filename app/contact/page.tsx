@@ -10,7 +10,7 @@ export default function ContactPage() {
         </a>
       </p>
       <p>
-        <a href="https://instagram.com" className="underline" target="_blank">
+        <a href="https://www.instagram.com/3164.estudio/" className="underline" target="_blank">
           Instagram
         </a>
       </p>
