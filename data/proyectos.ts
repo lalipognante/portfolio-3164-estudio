@@ -19,7 +19,7 @@ export const proyectos = [
       "/proyectos/Bustamante3.webp"
     ]
   },
- {
+  {
     titulo: "Proyecto 1",
     descripcion: "Refugio de Montaña, Potrero de Garay, 2020",
     imagenes: [
@@ -44,10 +44,10 @@ export const proyectos = [
       "/proyectos/Andalucia2.webp",
       "/proyectos/Andalucia3.webp",
       "/proyectos/Andalucia4.webp",
-      "/proyectos/Andalucia5.webp",
+      "/proyectos/Andalucia5.webp"
     ]
   },
- {
+  {
     titulo: "Proyecto 7",
     descripcion: "Casa La Cumbrecita, 2023",
     imagenes: [
@@ -68,30 +68,7 @@ export const proyectos = [
       "/proyectos/Estrada05.webp"
     ]
   },
-   {
+  {
     titulo: "Proyecto 13",
-    descripcion: "Mobiliario Rack TV, 2025",
-    imagenes: [
-      "/proyectos/Racktv01.webp"
-    ]
-  },
-   {
-    titulo: "Proyecto greenville",
-    descripcion: "Casa Greenville II, 2025",
-    imagenes: [
-      "/proyectos/Greenville1.webp",
-      "/proyectos/Greenville2.webp",
-      "/proyectos/Greenville3.webp",
-      "/proyectos/Greenville4.webp"
-    ]
-  },
-   {
-    titulo: "Proyecto molvento",
-    descripcion: "Casa Molvento, 2024",
-    imagenes: [
-      "/proyectos/Molvento1.webp",
-      "/proyectos/Molvento2.webp",
-      "/proyectos/Molvento3.webp",
-      "/proyectos/Molvento4.webp"
-    ]
-];
+    descripcion:
+
