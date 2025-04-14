@@ -18,7 +18,7 @@ export const proyectos = [
     ]
   },
  {
-    titulo: "Proyecto 1",
+    titulo: "Proyecto 13",
     descripcion: "Mobiliario Rack TV, 2025",
     imagenes: [
       "/proyectos/Racktv01.webp"
