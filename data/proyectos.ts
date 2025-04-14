@@ -17,6 +17,13 @@ export const proyectos = [
       "/proyectos/Bustamante3.webp"
     ]
   },
+ {
+    titulo: "Proyecto 1",
+    descripcion: "Mobiliario Rack TV, 2025",
+    imagenes: [
+      "/proyectos/Racktv01.webp"
+    ]
+  },
   {
     titulo: "Proyecto 1",
     descripcion: "Refugio de Montaña, Potrero de Garay, 2020",
