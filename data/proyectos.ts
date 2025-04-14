@@ -70,5 +70,29 @@ export const proyectos = [
   },
   {
     titulo: "Proyecto 13",
-    descripcion:
-
+    descripcion: "Mobiliario Rack TV, 2025",
+    imagenes: [
+      "/proyectos/Racktv01.webp"
+    ]
+  },
+  {
+    titulo: "Proyecto greenville",
+    descripcion: "Casa Greenville II, 2025",
+    imagenes: [
+      "/proyectos/Greenville1.webp",
+      "/proyectos/Greenville2.webp",
+      "/proyectos/Greenville3.webp",
+      "/proyectos/Greenville4.webp"
+    ]
+  },
+  {
+    titulo: "Proyecto molvento",
+    descripcion: "Casa Molvento, 2024",
+    imagenes: [
+      "/proyectos/Molvento1.webp",
+      "/proyectos/Molvento2.webp",
+      "/proyectos/Molvento3.webp",
+      "/proyectos/Molvento4.webp"
+    ]
+  }
+];
