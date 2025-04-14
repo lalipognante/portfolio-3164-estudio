@@ -57,11 +57,11 @@ export const proyectos = [
     titulo: "Proyecto 11",
     descripcion: "Edificio Estrada, 2025",
     imagenes: [
-      "/proyectos/estrada1.webp",
-      "/proyectos/estrada2.webp",
-      "/proyectos/estrada3.webp",
-      "/proyectos/estrada4.webp",
-      "/proyectos/estrada5.webp"
+      "/proyectos/Estrada01.webp",
+      "/proyectos/Estrada02.webp",
+      "/proyectos/Estrada03.webp",
+      "/proyectos/Estrada04.webp",
+      "/proyectos/Estrada05.webp"
     ]
   },
   {
