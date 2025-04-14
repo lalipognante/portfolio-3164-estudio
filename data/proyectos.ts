@@ -3,7 +3,9 @@ export const proyectos = [
     titulo: "Proyecto 4",
     descripcion: "Casa Cañuelas, Córdoba, 2020",
     imagenes: [
+      "/proyectos/Cañuelas01.webp",
       "/proyectos/image1-project4.webp",
+      "/proyectos/Cañuelas02.webp",
       "/proyectos/image4-project4.webp",
       "/proyectos/image5-project4.webp"
     ]
