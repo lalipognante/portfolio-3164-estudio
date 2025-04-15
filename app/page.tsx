@@ -36,32 +36,32 @@ function Proyecto({
   const next = () => setIndex((i) => (i === imagenes.length - 1 ? 0 : i + 1));
 
   const handleTouchStart = (e: React.TouchEvent) => {
-  setTouchStartX(e.touches[0].clientX);
-  setIsSwiping(false);
-};
+    setTouchStartX(e.touches[0].clientX);
+    setIsSwiping(false);
+  };
 
-const handleTouchMove = (e: React.TouchEvent) => {
-  if (touchStartX === null) return;
-
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (touchStartX === null) return;
+  
   const deltaX = e.touches[0].clientX - touchStartX;
-  if (Math.abs(deltaX) > 10) {
-    setIsSwiping(true);
-    e.preventDefault(); // previene scroll vertical
-  }
-};
-
-const handleTouchEnd = (e: React.TouchEvent) => {
-  if (touchStartX === null || !isSwiping) return;
-
-  const touchEndX = e.changedTouches[0].clientX;
-  const deltaX = touchStartX - touchEndX;
-
-  if (deltaX > 50) next();
-  else if (deltaX < -50) prev();
-
-  setTouchStartX(null);
-  setIsSwiping(false);
-};
+    if (Math.abs(deltaX) > 10) {
+      setIsSwiping(true);
+      e.preventDefault(); // previene scroll vertical
+    }
+  };
+  
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX === null || !isSwiping) return;
+  
+    const touchEndX = e.changedTouches[0].clientX;
+    const deltaX = touchStartX - touchEndX;
+  
+    if (deltaX > 50) next();
+    else if (deltaX < -50) prev();
+  
+    setTouchStartX(null);
+    setIsSwiping(false);
+  };
 
   return (
     <div className="proyecto-container flex flex-col space-y-4 md:space-y-0">
