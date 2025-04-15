@@ -57,12 +57,13 @@ function Proyecto({
         onTouchEnd={handleTouchEnd}
       >
         <Image
+          key={index}
           src={imagenes[index]}
           alt={titulo}
           width={1000}
           height={600}
           sizes="(max-width: 768px) 100vw, 1000px"
-          className="project-image w-full h-auto max-h-[80vh] object-contain"
+          className="project-image w-full h-auto max-h-[80vh] object-contain transition-opacity duration-300 ease-in-out opacity-100"
           priority={index === 0}
           loading="lazy"
         />
