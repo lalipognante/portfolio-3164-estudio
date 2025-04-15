@@ -24,6 +24,7 @@ export const proyectos = [
     descripcion: "Refugio de Montaña, Potrero de Garay, 2020",
     imagenes: [
       "/proyectos/image1-project1.webp",
+      "/proyectos/Refugio5.webp",
       "/proyectos/image2-project1.webp",
       "/proyectos/image3-project1.webp"
     ]
@@ -66,6 +67,21 @@ export const proyectos = [
       "/proyectos/Estrada03.webp",
       "/proyectos/Estrada04.webp",
       "/proyectos/Estrada05.webp"
+    ]
+  },
+{
+    titulo: "Proyecto 15",
+    descripcion: "Casa Escondida, 2023",
+    imagenes: [
+      "/proyectos/Escondida1.webp",
+      
+    ]
+  },
+{
+    titulo: "Proyecto 16",
+    descripcion: "Puesta en Valor Salsipuedes, 2024",
+    imagenes: [
+      "/proyectos/Racktv01.webp"
     ]
   },
   {
