@@ -14,15 +14,13 @@ export default function AboutPage() {
         Abordamos el proceso arquitectónico en todas sus etapas con una búsqueda del manejo de la técnica y conscientes del paso del tiempo en el objeto construido. Creemos en la necesaria integridad entre programa, forma y contexto. La sensibilidad hacia el ser humano, pero también en los mecanismos de construcción con el anhelo de dominar el arte de construir.
       </p>
 
-      <div className="flex justify-center">
-        <Image
-          src="/oficina.webp"
-          alt="Imagen de la oficina"
-          width={800}
-          height={500}
-          className="rounded-xl shadow-md w-full h-auto"
-        />
-      </div>
+      <Image
+        src="/oficina.webp"
+        alt="Imagen de la oficina"
+        width={1000}
+        height={600}
+        className="w-full h-auto object-contain"
+      />
     </main>
   );
 }
