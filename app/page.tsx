@@ -29,13 +29,33 @@ function Proyecto({
   descripcion: string;
 }) {
   const [index, setIndex] = useState(0);
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
 
   const prev = () => setIndex((i) => (i === 0 ? imagenes.length - 1 : i - 1));
   const next = () => setIndex((i) => (i === imagenes.length - 1 ? 0 : i + 1));
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX === null) return;
+    const touchEndX = e.changedTouches[0].clientX;
+    const deltaX = touchStartX - touchEndX;
+
+    if (deltaX > 50) next();        // swipe left
+    else if (deltaX < -50) prev();  // swipe right
+
+    setTouchStartX(null);
+  };
+
   return (
     <div className="proyecto-container flex flex-col space-y-4 md:space-y-0">
-      <div className="image-container w-full md:w-1/2">
+      <div
+        className="image-container w-full md:w-1/2"
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         <Image
           src={imagenes[index]}
           alt={titulo}
@@ -61,4 +81,3 @@ function Proyecto({
     </div>
   );
 }
-
