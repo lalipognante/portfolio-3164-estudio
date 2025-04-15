@@ -69,21 +69,21 @@ export const proyectos = [
       "/proyectos/Estrada05.webp"
     ]
   },
+    {
+    titulo: "Proyecto molvento",
+    descripcion: "Proyecto Casa Molvento, Villa Ciudad Parque, 2024",
+    imagenes: [
+      "/proyectos/Molvento1.webp",
+      "/proyectos/Molvento2.webp",
+      "/proyectos/Molvento3.webp",
+      "/proyectos/Molvento4.webp"
+    ]
+  },
 {
     titulo: "Proyecto 15",
     descripcion: "Proyecto Casa Escondida, Pueblo Estancia La Paz, 2023",
     imagenes: [
       "/proyectos/Escondida1.webp"
-    ]
-  },
-{
-    titulo: "Proyecto 16",
-    descripcion: "Proyecto Paseo Comercial 14-LEGUAS, Potrero de Garay, 2023",
-    imagenes: [
-      "/proyectos/Paseo14L1.webp",
-      "/proyectos/Paseo14L2.webp",
-      "/proyectos/Paseo14L3.webp",
-      "/proyectos/Paseo14L4.webp"
     ]
   },
   {
@@ -103,14 +103,14 @@ export const proyectos = [
       "/proyectos/Greenville4.webp"
     ]
   },
-  {
-    titulo: "Proyecto molvento",
-    descripcion: "Proyecto Casa Molvento, Villa Ciudad Parque, 2024",
+{
+    titulo: "Proyecto 16",
+    descripcion: "Proyecto Paseo Comercial 14-LEGUAS, Potrero de Garay, 2023",
     imagenes: [
-      "/proyectos/Molvento1.webp",
-      "/proyectos/Molvento2.webp",
-      "/proyectos/Molvento3.webp",
-      "/proyectos/Molvento4.webp"
+      "/proyectos/Paseo14L1.webp",
+      "/proyectos/Paseo14L2.webp",
+      "/proyectos/Paseo14L3.webp",
+      "/proyectos/Paseo14L4.webp"
     ]
-  }
+  },
 ];
