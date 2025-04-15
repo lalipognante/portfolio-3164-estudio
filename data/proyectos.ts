@@ -12,7 +12,7 @@ export const proyectos = [
   },
   {
     titulo: "Proyecto Bustamante",
-    descripcion: "Edificio Bustamante, Córdoba, 2025",
+    descripcion: "Proyecto Edificio Bustamante, Córdoba,  2025",
     imagenes: [
       "/proyectos/Bustamante1.webp",
       "/proyectos/Bustamante2.webp",
@@ -31,7 +31,7 @@ export const proyectos = [
   },
   {
     titulo: "Proyecto 2",
-    descripcion: "Casa Hotel Estancia La Paz, 2020",
+    descripcion: "Casa Hotel Estancia La Paz, Pueblo Estancia La Paz, 2020",
     imagenes: [
       "/proyectos/image1-project2.webp",
       "/proyectos/image2-project2.webp"
@@ -39,7 +39,7 @@ export const proyectos = [
   },
   {
     titulo: "Proyecto 5",
-    descripcion: "Casa Nueva Andalucia, 2024",
+    descripcion: "Proyecto Casa Nueva Andalucía, Nueva Andalucía, 2024",
     imagenes: [
       "/proyectos/Andalucia1.webp",
       "/proyectos/Andalucia2.webp",
@@ -50,7 +50,7 @@ export const proyectos = [
   },
   {
     titulo: "Proyecto 7",
-    descripcion: "Casa La Cumbrecita, 2023",
+    descripcion: "Casa La Cumbrecita, La Cumbrecita, 2023",
     imagenes: [
       "/proyectos/image2-project3.webp",
       "/proyectos/Cumbrecita01.webp",
@@ -60,7 +60,7 @@ export const proyectos = [
   },
   {
     titulo: "Proyecto 11",
-    descripcion: "Edificio Estrada, 2025",
+    descripcion: "Proyecto Edificio Estrada, Córdoba, 2025",
     imagenes: [
       "/proyectos/Estrada01.webp",
       "/proyectos/Estrada02.webp",
@@ -71,29 +71,31 @@ export const proyectos = [
   },
 {
     titulo: "Proyecto 15",
-    descripcion: "Casa Escondida, 2023",
+    descripcion: "Proyecto Casa Escondida, Pueblo Estancia La Paz, 2023",
     imagenes: [
-      "/proyectos/Escondida1.webp",
-      
+      "/proyectos/Escondida1.webp"
     ]
   },
 {
     titulo: "Proyecto 16",
-    descripcion: "Puesta en Valor Salsipuedes, 2024",
+    descripcion: "Proyecto Paseo Comercial 14-LEGUAS, Potrero de Garay, 2023",
     imagenes: [
-      "/proyectos/Racktv01.webp"
+      "/proyectos/Paseo14L1.webp",
+      "/proyectos/Paseo14L2.webp",
+      "/proyectos/Paseo14L3.webp",
+      "/proyectos/Paseo14L4.webp"
     ]
   },
   {
     titulo: "Proyecto 13",
-    descripcion: "Mobiliario Rack TV, 2025",
+    descripcion: "Mobiliario Rack TV, Córdoba, 2025",
     imagenes: [
       "/proyectos/Racktv01.webp"
     ]
   },
   {
     titulo: "Proyecto greenville",
-    descripcion: "Casa Greenville II, 2025",
+    descripcion: "Proyecto Casa Greenville II, Córdoba, 2025",
     imagenes: [
       "/proyectos/Greenville1.webp",
       "/proyectos/Greenville2.webp",
@@ -103,7 +105,7 @@ export const proyectos = [
   },
   {
     titulo: "Proyecto molvento",
-    descripcion: "Casa Molvento, 2024",
+    descripcion: "Proyecto Casa Molvento, Villa Ciudad Parque, 2024",
     imagenes: [
       "/proyectos/Molvento1.webp",
       "/proyectos/Molvento2.webp",
