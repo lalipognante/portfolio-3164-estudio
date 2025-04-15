@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { proyectos } from "../data/proyectos";
 
@@ -28,43 +28,57 @@ function Proyecto({
   imagenes: string[];
   descripcion: string;
 }) {
+  const [index, setIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
   const [touchStartY, setTouchStartY] = useState<number | null>(null);
   const [isHorizontalSwipe, setIsHorizontalSwipe] = useState(false);
-  
+  const [isMobile, setIsMobile] = useState(false);
+
+  // detectar si es mobile para ocultar botones
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize(); // inicial
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const prev = () => setIndex((i) => (i === 0 ? imagenes.length - 1 : i - 1));
+  const next = () => setIndex((i) => (i === imagenes.length - 1 ? 0 : i + 1));
+
   const handleTouchStart = (e: React.TouchEvent) => {
     setTouchStartX(e.touches[0].clientX);
     setTouchStartY(e.touches[0].clientY);
     setIsHorizontalSwipe(false);
   };
-  
+
   const handleTouchMove = (e: React.TouchEvent) => {
     if (touchStartX === null || touchStartY === null) return;
-  
+
     const deltaX = e.touches[0].clientX - touchStartX;
     const deltaY = e.touches[0].clientY - touchStartY;
-  
+
     if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 10) {
-      // Swipe horizontal → prevenimos scroll vertical
       setIsHorizontalSwipe(true);
       e.preventDefault();
     }
   };
-  
+
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (!isHorizontalSwipe || touchStartX === null) return;
-  
+
     const touchEndX = e.changedTouches[0].clientX;
     const deltaX = touchStartX - touchEndX;
-  
+
     if (deltaX > 50) next();
     else if (deltaX < -50) prev();
-  
+
     setTouchStartX(null);
     setTouchStartY(null);
     setIsHorizontalSwipe(false);
   };
-
 
   return (
     <div className="proyecto-container flex flex-col space-y-4 md:space-y-0">
@@ -91,9 +105,17 @@ function Proyecto({
         <p className="text-xs font-mono text-left">{descripcion}</p>
         {imagenes.length > 1 && (
           <div className="text-xs flex justify-center gap-2 min-w-[78px]">
-            <button onClick={prev} className="hover:underline">{"<"}</button>
+            {!isMobile && (
+              <button onClick={prev} className="hover:underline">
+                {"<"}
+              </button>
+            )}
             <span>{index + 1} / {imagenes.length}</span>
-            <button onClick={next} className="hover:underline">{">"}</button>
+            {!isMobile && (
+              <button onClick={next} className="hover:underline">
+                {">"}
+              </button>
+            )}
           </div>
         )}
       </div>
