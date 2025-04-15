@@ -15,9 +15,9 @@ export default function TeamPage() {
         <Image
           src="/team.webp"
           alt="Foto del equipo"
-          width={600}
-          height={400}
-          className="rounded-xl shadow-md"
+          width={1000}
+          height={600}
+          className="w-full h-auto object-contain"
         />
       </div>
     </main>
