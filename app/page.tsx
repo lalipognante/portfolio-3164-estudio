@@ -28,30 +28,31 @@ function Proyecto({
   imagenes: string[];
   descripcion: string;
 }) {
-  const [index, setIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
-  const [isSwiping, setIsSwiping] = useState(false);
-
-  const prev = () => setIndex((i) => (i === 0 ? imagenes.length - 1 : i - 1));
-  const next = () => setIndex((i) => (i === imagenes.length - 1 ? 0 : i + 1));
-
+  const [touchStartY, setTouchStartY] = useState<number | null>(null);
+  const [isHorizontalSwipe, setIsHorizontalSwipe] = useState(false);
+  
   const handleTouchStart = (e: React.TouchEvent) => {
     setTouchStartX(e.touches[0].clientX);
-    setIsSwiping(false);
+    setTouchStartY(e.touches[0].clientY);
+    setIsHorizontalSwipe(false);
   };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    if (touchStartX === null) return;
   
-  const deltaX = e.touches[0].clientX - touchStartX;
-    if (Math.abs(deltaX) > 10) {
-      setIsSwiping(true);
-      e.preventDefault(); // previene scroll vertical
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (touchStartX === null || touchStartY === null) return;
+  
+    const deltaX = e.touches[0].clientX - touchStartX;
+    const deltaY = e.touches[0].clientY - touchStartY;
+  
+    if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 10) {
+      // Swipe horizontal → prevenimos scroll vertical
+      setIsHorizontalSwipe(true);
+      e.preventDefault();
     }
   };
   
   const handleTouchEnd = (e: React.TouchEvent) => {
-    if (touchStartX === null || !isSwiping) return;
+    if (!isHorizontalSwipe || touchStartX === null) return;
   
     const touchEndX = e.changedTouches[0].clientX;
     const deltaX = touchStartX - touchEndX;
@@ -60,13 +61,15 @@ function Proyecto({
     else if (deltaX < -50) prev();
   
     setTouchStartX(null);
-    setIsSwiping(false);
+    setTouchStartY(null);
+    setIsHorizontalSwipe(false);
   };
+
 
   return (
     <div className="proyecto-container flex flex-col space-y-4 md:space-y-0">
       <div
-        className="image-container w-full md:w-1/2 touch-none"
+        className="image-container w-full md:w-1/2"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
