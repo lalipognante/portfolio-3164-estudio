@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-
 export default function AboutPage() {
   return (
     <main className="max-w-2xl text-sm leading-relaxed space-y-6">
