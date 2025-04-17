@@ -34,7 +34,9 @@ export const proyectos = [
     descripcion: "Casa Hotel Estancia La Paz, Pueblo Estancia La Paz, 2020",
     imagenes: [
       "/proyectos/image1-project2.webp",
-      "/proyectos/image2-project2.webp"
+      "/proyectos/image2-project2.webp",
+      "/proyectos/DF01.webp",
+      "/proyectos/DF02.webp"
     ]
   },
   {
@@ -101,6 +103,23 @@ export const proyectos = [
       "/proyectos/Greenville2.webp",
       "/proyectos/Greenville3.webp",
       "/proyectos/Greenville4.webp"
+    ]
+  },
+{
+    titulo: "Proyecto 16",
+    descripcion: "Proyecto Casa Polo Estancia La Paz, Pueblo Estancia La Paz, 2024",
+    imagenes: [
+      "/proyectos/Polo1.webp",
+      "/proyectos/Polo2.webp"
+    ]
+  },
+{
+    titulo: "Proyecto 18",
+    descripcion: "Proyecto Lofts de Montaña, Módulos Habitables, 2024",
+    imagenes: [
+      "/proyectos/Lofts1.webp",
+      "/proyectos/Lofts2.webp",
+      "/proyectos/Lofts3.webp"
     ]
   },
 {
