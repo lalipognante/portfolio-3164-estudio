@@ -40,16 +40,16 @@ export const proyectos = [
     ]
   },
   {
-    titulo: "Proyecto 5",
-    descripcion: "Proyecto Casa Nueva Andalucía, Nueva Andalucía, 2024",
+    titulo: "Proyecto 11",
+    descripcion: "Proyecto Edificio Estrada, Córdoba, 2025",
     imagenes: [
-      "/proyectos/Andalucia1.webp",
-      "/proyectos/Andalucia2.webp",
-      "/proyectos/Andalucia3.webp",
-      "/proyectos/Andalucia4.webp",
-      "/proyectos/Andalucia5.webp"
+      "/proyectos/Estrada05.webp",
+      "/proyectos/Estrada02.webp",
+      "/proyectos/Estrada03.webp",
+      "/proyectos/Estrada04.webp",
+      "/proyectos/Estrada01.webp"
     ]
-  },
+   },    
   {
     titulo: "Proyecto 7",
     descripcion: "Casa La Cumbrecita, La Cumbrecita, 2023",
@@ -60,15 +60,15 @@ export const proyectos = [
       "/proyectos/Cumbrecita03.webp" 
     ]
   },
-  {
-    titulo: "Proyecto 11",
-    descripcion: "Proyecto Edificio Estrada, Córdoba, 2025",
+ {
+    titulo: "Proyecto 5",
+    descripcion: "Proyecto Casa Nueva Andalucía, Nueva Andalucía, 2024",
     imagenes: [
-      "/proyectos/Estrada01.webp",
-      "/proyectos/Estrada02.webp",
-      "/proyectos/Estrada03.webp",
-      "/proyectos/Estrada04.webp",
-      "/proyectos/Estrada05.webp"
+      "/proyectos/Andalucia1.webp",
+      "/proyectos/Andalucia2.webp",
+      "/proyectos/Andalucia3.webp",
+      "/proyectos/Andalucia4.webp",
+      "/proyectos/Andalucia5.webp"
     ]
   },
     {
