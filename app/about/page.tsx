@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 
 export default function AboutPage() {
@@ -13,5 +12,6 @@ export default function AboutPage() {
       <p>
         Abordamos el proceso arquitectónico en todas sus etapas con una búsqueda del manejo de la técnica y conscientes del paso del tiempo en el objeto construido. Creemos en la necesaria integridad entre programa, forma y contexto. La sensibilidad hacia el ser humano, pero también en los mecanismos de construcción con el anhelo de dominar el arte de construir.
       </p>
+    </main>
   );
 }
