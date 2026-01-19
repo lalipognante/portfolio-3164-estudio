@@ -40,6 +40,36 @@ export const proyectos = [
     ]
   },
   {
+    titulo: "Proyecto ARM",
+    descripcion: "Proyecto Casa ARM, Pueblo Estancia La Paz, 2026",
+    imagenes: [
+      "/proyectos/aurum1.webp",
+      "/proyectos/aurum2.webp",
+      "/proyectos/aurum3.webp",
+      "/proyectos/aurum4.webp"
+    ]
+   },
+  {
+    titulo: "Proyecto Náutica",
+    descripcion: "Proyecto Náutica y Astillero Campanili, Córdoba, 2025",
+    imagenes: [
+      "/proyectos/campa1.webp",
+      "/proyectos/campa2.webp",
+      "/proyectos/campa3.webp",
+      "/proyectos/campa4.webp"
+    ]
+   },
+ {
+    titulo: "Proyecto Conci",
+    descripcion: "Proyecto Housing Conci, Córdoba, 2018",
+    imagenes: [
+      "/proyectos/conci1.webp",
+      "/proyectos/conci2.webp",
+      "/proyectos/conci3.webp",
+      "/proyectos/conci4.webp"
+    ]
+   },
+   {
     titulo: "Proyecto 11",
     descripcion: "Proyecto Edificio Estrada, Córdoba, 2025",
     imagenes: [
@@ -49,7 +79,7 @@ export const proyectos = [
       "/proyectos/Estrada04.webp",
       "/proyectos/Estrada01.webp"
     ]
-   },    
+   },
   {
     titulo: "Proyecto 7",
     descripcion: "Casa La Cumbrecita, La Cumbrecita, 2023",
